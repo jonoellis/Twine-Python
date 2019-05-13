@@ -3,7 +3,7 @@ Twine is a great tool for creating non-linear stories, but not for creating a bo
 
 Steps:
 * Copy your Twine source file to a folder with your Python scripts - on a Mac this seems to be stored at /Users/USER/Documents/Twine/Stories/STORY.html 
-Run the following three scripts: 
+* Run the following three scripts: 
 ```
 python 1-split.py STORY.html 
 python 2-merge.py 
