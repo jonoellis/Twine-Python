@@ -2,7 +2,7 @@ import glob
 import re
 path = 'Chapter '+'*.txt'
 files = sorted(glob.glob(path),key=lambda name: int(name[8:-4]))
-with open('temp.txt', 'w') as outfile:
+with open('/Users/u440230/Desktop/TwinePython/temp.txt', 'w') as outfile:
      for name in files:
          with open(name) as infile:
              for line in infile:

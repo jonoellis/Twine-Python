@@ -19,7 +19,10 @@ for chapter in chapters:
     content = chapter.contents
     content = str(content)
     content = remove_prefix(content,'[u\'')
+    content = remove_prefix(content,'[u\"')
+    content = remove_postfix(content,'\"]')
     content = remove_postfix(content,'\']')
+
     with open(title+'.txt','w') as oFile:
         oFile.write(content)
         oFile.close()
